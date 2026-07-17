@@ -27,5 +27,4 @@ needed for citywide visibility does not exist.
 - Rebuild the embedded data snapshot with `python3 dashboard/build_dashboard.py` (requires the
   civic-ai-tools socrata server and a free Socrata app token).
 
-Public data and public documents only. Prepared as a demonstration for charter-revision
-discussion.
+Public data and public documents only.
