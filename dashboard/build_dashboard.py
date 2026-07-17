@@ -283,29 +283,31 @@ def main():
     ), "new-housing hero stats (12mo)"))
 
     # ---- Three clocks: permission clock (server-side) ----
+    # Trailing-12-month cohorts so the spans match the right edge of the quarterly charts.
+    cutoff_12mo = (datetime.date.today() - datetime.timedelta(days=365)).isoformat()
     data["clocks_permit_seg"] = soql("w9ak-ipjd", (
         f'SELECT {SEGMENT_CASE}, COUNT(*) AS n, '
         'median(date_diff_d(approved_date, filing_date)) AS med_approval, '
         'median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit '
         'WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL '
-        'AND first_permit_date >= "2023-01-01" AND job_filing_number LIKE "%-I1" '
+        f'AND first_permit_date >= "{cutoff_12mo}" AND job_filing_number LIKE "%-I1" '
         'GROUP BY segment LIMIT 20'
-    ), "permission clock by segment (permits issued since 2023, measured back to filing)")
+    ), "permission clock by segment (permits issued past 12mo, measured back to filing)")
     data["clocks_permit_seg"] += tag(soql("w9ak-ipjd", (
         'SELECT COUNT(*) AS n, '
         'median(date_diff_d(approved_date, filing_date)) AS med_approval, '
         'median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit '
         'WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL '
-        f'AND first_permit_date >= "2023-01-01" AND {NB_WHERE}'
-    ), "permission clock, new housing (NB permits issued since 2023, measured back to filing)"))
+        f'AND first_permit_date >= "{cutoff_12mo}" AND {NB_WHERE}'
+    ), "permission clock, new housing (NB permits issued past 12mo, measured back to filing)"))
 
     data["clocks_permit_all"] = soql("w9ak-ipjd", (
         'SELECT COUNT(*) AS n, '
         'median(date_diff_d(approved_date, filing_date)) AS med_approval, '
         'median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit '
         'WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL '
-        'AND first_permit_date >= "2023-01-01" AND job_filing_number LIKE "%-I1"'
-    ), "permission clock, all projects (permits issued since 2023, measured back to filing)")
+        f'AND first_permit_date >= "{cutoff_12mo}" AND job_filing_number LIKE "%-I1"'
+    ), "permission clock, all projects (permits issued past 12mo, measured back to filing)")
 
     # ---- Three clocks: delivery clock (client-side join filings <-> COs) ----
     cos = []
@@ -373,12 +375,12 @@ def main():
         else:
             seg = "new_house"
         cod = first_co[k]
-        joined.append({"days": dd, "co_year": cod.year,
+        joined.append({"days": dd, "co_year": cod.year, "co_iso": cod.isoformat(),
                        "co_q": f"{cod.year}-Q{(cod.month - 1) // 3 + 1}",
                        "units": u or 0, "seg": seg, "bucket": bucket(u)})
     def med_block(vals):
         return {"n": len(vals), "median_days": statistics.median(vals) if vals else None}
-    recent = [j["days"] for j in joined if j["co_year"] >= 2023]
+    recent = [j["days"] for j in joined if j["co_iso"] >= cutoff_12mo]
     # Quarterly delivery series per segment (+ all-NB rollup), cohorted by CO quarter.
     cur_q = f"{TODAY[:4]}-Q{(int(TODAY[5:7]) - 1) // 3 + 1}"
     dq = []
@@ -395,14 +397,14 @@ def main():
     data["clocks_delivery"] = {
         "overall_recent": med_block(recent),
         "by_bucket_recent": {b: med_block([j["days"] for j in joined
-                                           if j["co_year"] >= 2023 and j["bucket"] == b])
+                                           if j["co_iso"] >= cutoff_12mo and j["bucket"] == b])
                              for b in ("1-3", "4-25", "26-99", "100+")},
         "by_co_year": {y: med_block([j["days"] for j in joined if j["co_year"] == y])
                        for y in sorted({j["co_year"] for j in joined}) if y >= 2022},
         "note": (f"Client-side join of {len(filings)} NB initial filings to {len(first_co)} jobs "
-                 "with an issued Initial/Final CO (earliest per job); cohort = COs issued 2023+. "
-                 "Only completed buildings are measurable, so the cohort skews toward projects "
-                 "that finished — a survivorship limit of published data."),
+                 "with an issued Initial/Final CO (earliest per job); cohort = COs issued in the "
+                 "past 12 months. Only completed buildings are measurable, so the cohort skews "
+                 "toward projects that finished — a survivorship limit of published data."),
     }
     print(f"  delivery clock: joined {len(joined)} NB jobs "
           f"(median {data['clocks_delivery']['overall_recent']['median_days']}d, "

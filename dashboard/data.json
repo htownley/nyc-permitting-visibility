@@ -4249,29 +4249,29 @@
  ],
  "bis_stages": {
   "prefile_to_assigned": {
-   "n": 23591,
+   "n": 23599,
    "median_days": 4,
-   "p75_days": 1114.0
+   "p75_days": 1116.0
   },
   "assigned_to_approved": {
-   "n": 15627,
+   "n": 15635,
    "median_days": 6,
    "p75_days": 57.0
   },
   "approved_to_permitted": {
-   "n": 25476,
+   "n": 25484,
    "median_days": 17.0,
    "p75_days": 155.0
   },
   "permitted_to_signoff": {
-   "n": 25501,
-   "median_days": 2098,
-   "p75_days": 3293.0
+   "n": 25508,
+   "median_days": 2098.0,
+   "p75_days": 3292.0
   },
   "prefile_to_signoff": {
    "n": 32000,
    "median_days": 2452.0,
-   "p75_days": 3472.0
+   "p75_days": 3471.0
   },
   "sample_note": "Sample of 32000 BIS jobs signed off 2022-2025 (up to 8,000/yr); milestone dates are text-typed in the source, parsed client-side."
  },
@@ -4374,50 +4374,50 @@
  "clocks_permit_seg": [
   {
    "segment": "home_reno",
-   "n": "49509",
+   "n": "13419",
    "med_approval": "3",
-   "med_first_permit": "16"
+   "med_first_permit": "13"
   },
   {
    "segment": "new_house",
-   "n": "3011",
-   "med_approval": "124",
-   "med_first_permit": "255"
+   "n": "918",
+   "med_approval": "142",
+   "med_first_permit": "269"
   },
   {
    "segment": "new_large_mf",
-   "n": "279",
-   "med_approval": "227",
-   "med_first_permit": "414"
+   "n": "98",
+   "med_approval": "197.5",
+   "med_first_permit": "321.5"
   },
   {
    "segment": "new_small_mf",
-   "n": "514",
-   "med_approval": "187",
-   "med_first_permit": "350"
+   "n": "166",
+   "med_approval": "174.5",
+   "med_first_permit": "303"
   },
   {
    "segment": "new_tower",
-   "n": "333",
-   "med_approval": "365",
-   "med_first_permit": "597"
+   "n": "127",
+   "med_approval": "325",
+   "med_first_permit": "519"
   },
   {
    "segment": "other_work",
-   "n": "154061",
-   "med_approval": "4",
-   "med_first_permit": "34"
+   "n": "39811",
+   "med_approval": "5",
+   "med_first_permit": "35"
   },
   {
-   "n": "4137",
-   "med_approval": "155",
-   "med_first_permit": "304",
+   "n": "1309",
+   "med_approval": "167",
+   "med_first_permit": "302",
    "segment": "new_housing"
   }
  ],
  "clocks_permit_all": [
   {
-   "n": "207707",
+   "n": "54539",
    "med_approval": "4",
    "med_first_permit": "30"
   }
@@ -4993,25 +4993,25 @@
  ],
  "clocks_delivery": {
   "overall_recent": {
-   "n": 2641,
-   "median_days": 739
+   "n": 870,
+   "median_days": 917.5
   },
   "by_bucket_recent": {
    "1-3": {
-    "n": 1921,
-    "median_days": 652
+    "n": 584,
+    "median_days": 803.5
    },
    "4-25": {
-    "n": 341,
-    "median_days": 918
+    "n": 118,
+    "median_days": 1063.5
    },
    "26-99": {
-    "n": 248,
-    "median_days": 1021.0
+    "n": 96,
+    "median_days": 1295.0
    },
    "100+": {
-    "n": 131,
-    "median_days": 1280
+    "n": 72,
+    "median_days": 1430.0
    }
   },
   "by_co_year": {
@@ -5036,7 +5036,7 @@
     "median_days": 920.0
    }
   },
-  "note": "Client-side join of 9227 NB initial filings to 2799 jobs with an issued Initial/Final CO (earliest per job); cohort = COs issued 2023+. Only completed buildings are measurable, so the cohort skews toward projects that finished \u2014 a survivorship limit of published data."
+  "note": "Client-side join of 9227 NB initial filings to 2799 jobs with an issued Initial/Final CO (earliest per job); cohort = COs issued in the past 12 months. Only completed buildings are measurable, so the cohort skews toward projects that finished \u2014 a survivorship limit of published data."
  },
  "hero": {
   "dobnow_totals": [
@@ -5195,20 +5195,20 @@
   },
   {
    "dataset": "w9ak-ipjd",
-   "purpose": "permission clock by segment (permits issued since 2023, measured back to filing)",
-   "soql": "SELECT case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2023-01-01\" AND job_filing_number LIKE \"%-I1\" GROUP BY segment LIMIT 20",
+   "purpose": "permission clock by segment (permits issued past 12mo, measured back to filing)",
+   "soql": "SELECT case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2025-07-17\" AND job_filing_number LIKE \"%-I1\" GROUP BY segment LIMIT 20",
    "rows": 6
   },
   {
    "dataset": "w9ak-ipjd",
-   "purpose": "permission clock, new housing (NB permits issued since 2023, measured back to filing)",
-   "soql": "SELECT COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2023-01-01\" AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" ",
+   "purpose": "permission clock, new housing (NB permits issued past 12mo, measured back to filing)",
+   "soql": "SELECT COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2025-07-17\" AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" ",
    "rows": 1
   },
   {
    "dataset": "w9ak-ipjd",
-   "purpose": "permission clock, all projects (permits issued since 2023, measured back to filing)",
-   "soql": "SELECT COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2023-01-01\" AND job_filing_number LIKE \"%-I1\"",
+   "purpose": "permission clock, all projects (permits issued past 12mo, measured back to filing)",
+   "soql": "SELECT COUNT(*) AS n, median(date_diff_d(approved_date, filing_date)) AS med_approval, median(date_diff_d(first_permit_date, filing_date)) AS med_first_permit WHERE first_permit_date IS NOT NULL AND approved_date IS NOT NULL AND first_permit_date >= \"2025-07-17\" AND job_filing_number LIKE \"%-I1\"",
    "rows": 1
   },
   {
