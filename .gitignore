@@ -1,0 +1,8 @@
+# Whitelist: only the public dashboard is tracked. Everything else in this
+# working directory (notes, drafts, internal material) stays local.
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/dashboard/
+/dashboard/drafts/
