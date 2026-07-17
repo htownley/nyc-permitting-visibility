@@ -155,6 +155,13 @@
   <details class="tblv"><summary>Table</summary><div class="chart-scroll" id="clock-table"></div></details>
 </section>
 
+<section class="card" id="co-clock-card">
+  <h2>Time to certificate of occupancy<span id="co-clock-scope"></span><button class="i" data-tip="Each point: new buildings receiving their first certificate of occupancy that quarter, median days since filing — the full journey through construction and every agency's sign-offs. Bars (right axis): units in those COs — homes actually delivered. Line starts 2023: earlier quarters could only contain fast projects (slower ones predate this data system), which biases their medians low; some of that effect persists, so read levels, not slopes. Only completed buildings can be measured. New buildings only — renovations don't receive COs.">i</button></h2>
+  <div class="legend" id="co-clock-legend"></div>
+  <div class="chart-scroll"><div id="co-clock-chart"></div></div>
+  <details class="tblv"><summary>Table</summary><div class="chart-scroll" id="co-clock-table"></div></details>
+</section>
+
 <section class="card" id="jobtype-card">
   <h2>By job type<button class="i" data-tip="Median days to approval, approvals in the past 12 months. The project-type selector above is the finer version of this split; shown on the all-filings view only.">i</button></h2>
   <div class="legend" id="jt-legend"></div>
@@ -227,7 +234,7 @@
 <div id="tooltip"></div>
 
 <script id="dash-data" type="application/json">{
- "built_at": "2026-07-16",
+ "built_at": "2026-07-17",
  "terminal_statuses": [
   "LOC Issued",
   "Approved",
@@ -492,7 +499,7 @@
    "n": "8606",
    "med_days": "21",
    "within_6wk": "6013",
-   "units": "282052"
+   "units": "281918"
   },
   {
    "yy": "2024",
@@ -510,16 +517,16 @@
    "n": "7891",
    "med_days": "20",
    "within_6wk": "5461",
-   "units": "266031"
+   "units": "266042"
   },
   {
    "yy": "2024",
    "qq": "Q4",
    "filing_review_type": "Professional Certification",
-   "n": "8470",
+   "n": "8471",
    "med_days": "1",
-   "within_6wk": "8383",
-   "units": "236950"
+   "within_6wk": "8384",
+   "units": "236953"
   },
   {
    "yy": "2024",
@@ -579,10 +586,10 @@
    "yy": "2025",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "7366",
+   "n": "7365",
    "med_days": "33",
    "within_6wk": "4350",
-   "units": "231556"
+   "units": "231433"
   },
   {
    "yy": "2025",
@@ -642,68 +649,68 @@
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Professional Certification",
-   "n": "1192",
+   "n": "1312",
    "med_days": "1",
-   "within_6wk": "1179",
-   "units": "30206"
+   "within_6wk": "1299",
+   "units": "34046"
   },
   {
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "1095",
-   "med_days": "33",
-   "within_6wk": "620",
-   "units": "41724"
+   "n": "1218",
+   "med_days": "34",
+   "within_6wk": "683",
+   "units": "46403"
   }
  ],
  "dobnow_by_jobtype": [
   {
    "job_type": "Alteration",
    "filing_review_type": "Professional Certification",
-   "n": "32234",
+   "n": "32352",
    "med_days": "1"
   },
   {
    "job_type": "Alteration",
    "filing_review_type": "Standard Plan Examination",
-   "n": "22598",
+   "n": "22685",
    "med_days": "28"
   },
   {
    "job_type": "Alteration CO",
    "filing_review_type": "Standard Plan Examination",
-   "n": "1867",
+   "n": "1878",
    "med_days": "144"
   },
   {
    "job_type": "No Work",
    "filing_review_type": "Standard Plan Examination",
-   "n": "1864",
+   "n": "1873",
    "med_days": "6"
   },
   {
    "job_type": "Full Demolition",
    "filing_review_type": "Standard Plan Examination",
-   "n": "1563",
+   "n": "1566",
    "med_days": "51"
   },
   {
    "job_type": "New Building",
    "filing_review_type": "Standard Plan Examination",
-   "n": "1312",
-   "med_days": "197"
+   "n": "1320",
+   "med_days": "198"
   },
   {
    "job_type": "ALT-CO - New Building with Existing Elements to Remain",
    "filing_review_type": "Standard Plan Examination",
-   "n": "493",
+   "n": "497",
    "med_days": "171"
   },
   {
    "job_type": "No Work",
    "filing_review_type": "Professional Certification",
-   "n": "209",
+   "n": "211",
    "med_days": "1"
   },
   {
@@ -728,27 +735,27 @@
  "dobnow_by_borough": [
   {
    "borough": "Manhattan",
-   "n": "11032",
+   "n": "11082",
    "med_days": "23"
   },
   {
    "borough": "Brooklyn",
-   "n": "7799",
+   "n": "7823",
    "med_days": "42"
   },
   {
    "borough": "Queens",
-   "n": "6199",
+   "n": "6224",
    "med_days": "53"
   },
   {
    "borough": "Bronx",
-   "n": "3285",
+   "n": "3300",
    "med_days": "29"
   },
   {
    "borough": "Staten Island",
-   "n": "1382",
+   "n": "1390",
    "med_days": "49"
   }
  ],
@@ -1991,7 +1998,7 @@
    "n": "6733",
    "med_days": "18",
    "within_6wk": "4925",
-   "units": "275071"
+   "units": "274937"
   },
   {
    "segment": "home_reno",
@@ -2038,10 +2045,10 @@
    "yy": "2024",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "18",
-   "med_days": "271",
+   "n": "17",
+   "med_days": "258",
    "within_6wk": "0",
-   "units": "815"
+   "units": "772"
   },
   {
    "segment": "new_small_mf",
@@ -2058,10 +2065,10 @@
    "yy": "2024",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "16",
-   "med_days": "669",
+   "n": "17",
+   "med_days": "607",
    "within_6wk": "0",
-   "units": "2707"
+   "units": "2761"
   },
   {
    "segment": "other_work",
@@ -2158,10 +2165,10 @@
    "yy": "2024",
    "qq": "Q4",
    "filing_review_type": "Professional Certification",
-   "n": "5470",
+   "n": "5471",
    "med_days": "1",
-   "within_6wk": "5426",
-   "units": "234529"
+   "within_6wk": "5427",
+   "units": "234532"
   },
   {
    "segment": "other_work",
@@ -2438,10 +2445,10 @@
    "yy": "2025",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "5683",
+   "n": "5682",
    "med_days": "29",
    "within_6wk": "3510",
-   "units": "223391"
+   "units": "223268"
   },
   {
    "segment": "home_reno",
@@ -2728,20 +2735,20 @@
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Professional Certification",
-   "n": "288",
+   "n": "325",
    "med_days": "1",
-   "within_6wk": "288",
-   "units": "352"
+   "within_6wk": "325",
+   "units": "374"
   },
   {
    "segment": "home_reno",
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "147",
-   "med_days": "47",
-   "within_6wk": "70",
-   "units": "248"
+   "n": "159",
+   "med_days": "48",
+   "within_6wk": "75",
+   "units": "262"
   },
   {
    "segment": "new_house",
@@ -2758,10 +2765,10 @@
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "25",
+   "n": "29",
    "med_days": "267",
    "within_6wk": "0",
-   "units": "37"
+   "units": "42"
   },
   {
    "segment": "new_large_mf",
@@ -2778,40 +2785,40 @@
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "8",
-   "med_days": "182",
+   "n": "10",
+   "med_days": "201",
    "within_6wk": "0",
-   "units": "115"
+   "units": "128"
   },
   {
    "segment": "new_tower",
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "7",
+   "n": "9",
    "med_days": "296",
    "within_6wk": "0",
-   "units": "1112"
+   "units": "1296"
   },
   {
    "segment": "other_work",
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Professional Certification",
-   "n": "895",
-   "med_days": "2",
-   "within_6wk": "886",
-   "units": "29838"
+   "n": "978",
+   "med_days": "1",
+   "within_6wk": "969",
+   "units": "33656"
   },
   {
    "segment": "other_work",
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "900",
+   "n": "1003",
    "med_days": "29",
-   "within_6wk": "550",
-   "units": "39741"
+   "within_6wk": "608",
+   "units": "44204"
   },
   {
    "yy": "2021",
@@ -3090,7 +3097,7 @@
    "n": "266",
    "med_days": "236",
    "within_6wk": "11",
-   "units": "4207",
+   "units": "4218",
    "segment": "new_housing"
   },
   {
@@ -3247,10 +3254,10 @@
    "yy": "2026",
    "qq": "Q3",
    "filing_review_type": "Standard Plan Examination",
-   "n": "48",
-   "med_days": "225.5",
+   "n": "56",
+   "med_days": "267.5",
    "within_6wk": "0",
-   "units": "1735",
+   "units": "1937",
    "segment": "new_housing"
   }
  ],
@@ -3258,61 +3265,61 @@
   {
    "borough": "Manhattan",
    "segment": "other_work",
-   "n": "10698",
+   "n": "10747",
    "med_days": "22"
   },
   {
    "borough": "Brooklyn",
    "segment": "other_work",
-   "n": "5597",
+   "n": "5615",
    "med_days": "42"
   },
   {
    "borough": "Queens",
    "segment": "other_work",
-   "n": "3791",
-   "med_days": "52"
+   "n": "3809",
+   "med_days": "51"
   },
   {
    "borough": "Bronx",
    "segment": "other_work",
-   "n": "2457",
-   "med_days": "24"
+   "n": "2469",
+   "med_days": "23"
   },
   {
    "borough": "Queens",
    "segment": "home_reno",
-   "n": "1925",
+   "n": "1930",
    "med_days": "39"
   },
   {
    "borough": "Brooklyn",
    "segment": "home_reno",
-   "n": "1880",
+   "n": "1884",
    "med_days": "35"
   },
   {
    "borough": "Staten Island",
    "segment": "other_work",
-   "n": "778",
-   "med_days": "36"
+   "n": "783",
+   "med_days": "37"
   },
   {
    "borough": "Bronx",
    "segment": "home_reno",
-   "n": "567",
+   "n": "569",
    "med_days": "25"
   },
   {
    "borough": "Staten Island",
    "segment": "home_reno",
-   "n": "410",
+   "n": "411",
    "med_days": "41"
   },
   {
    "borough": "Queens",
    "segment": "new_house",
-   "n": "385",
+   "n": "386",
    "med_days": "167"
   },
   {
@@ -3324,26 +3331,26 @@
   {
    "borough": "Staten Island",
    "segment": "new_house",
-   "n": "193",
+   "n": "195",
    "med_days": "133"
   },
   {
    "borough": "Brooklyn",
    "segment": "new_house",
-   "n": "142",
-   "med_days": "196.5"
+   "n": "143",
+   "med_days": "197"
   },
   {
    "borough": "Brooklyn",
    "segment": "new_small_mf",
-   "n": "102",
-   "med_days": "202.5"
+   "n": "103",
+   "med_days": "207"
   },
   {
    "borough": "Bronx",
    "segment": "new_small_mf",
-   "n": "74",
-   "med_days": "177"
+   "n": "75",
+   "med_days": "178"
   },
   {
    "borough": "Bronx",
@@ -3384,14 +3391,14 @@
   {
    "borough": "Manhattan",
    "segment": "new_tower",
-   "n": "30",
-   "med_days": "431"
+   "n": "31",
+   "med_days": "413"
   },
   {
    "borough": "Queens",
    "segment": "new_tower",
-   "n": "29",
-   "med_days": "296"
+   "n": "30",
+   "med_days": "293"
   },
   {
    "borough": "Queens",
@@ -3425,32 +3432,32 @@
   },
   {
    "borough": "Queens",
-   "n": "483",
-   "med_days": "187",
+   "n": "485",
+   "med_days": "190",
    "segment": "new_housing"
   },
   {
    "borough": "Brooklyn",
-   "n": "322",
-   "med_days": "215",
+   "n": "324",
+   "med_days": "215.5",
    "segment": "new_housing"
   },
   {
    "borough": "Bronx",
-   "n": "261",
+   "n": "262",
    "med_days": "207",
    "segment": "new_housing"
   },
   {
    "borough": "Staten Island",
-   "n": "194",
-   "med_days": "132",
+   "n": "196",
+   "med_days": "133",
    "segment": "new_housing"
   },
   {
    "borough": "Manhattan",
-   "n": "52",
-   "med_days": "347",
+   "n": "53",
+   "med_days": "344",
    "segment": "new_housing"
   }
  ],
@@ -3458,218 +3465,224 @@
   {
    "filing_status": "Objections",
    "segment": "other_work",
-   "n": "9241",
-   "med_age_days": "729"
+   "n": "9235",
+   "med_age_days": "731"
   },
   {
    "filing_status": "Objections",
    "segment": "home_reno",
-   "n": "2452",
-   "med_age_days": "899"
+   "n": "2446",
+   "med_age_days": "904"
   },
   {
    "filing_status": "Plan Examiner Review",
    "segment": "other_work",
-   "n": "1901",
-   "med_age_days": "49"
+   "n": "1923",
+   "med_age_days": "46"
   },
   {
    "filing_status": "Objections",
    "segment": "new_house",
-   "n": "1173",
-   "med_age_days": "644"
+   "n": "1171",
+   "med_age_days": "645"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
    "segment": "other_work",
-   "n": "844",
-   "med_age_days": "1017.5"
+   "n": "840",
+   "med_age_days": "1022"
   },
   {
    "filing_status": "Incomplete",
    "segment": "other_work",
-   "n": "656",
-   "med_age_days": "1781.5"
+   "n": "655",
+   "med_age_days": "1785"
   },
   {
    "filing_status": "Plan Examiner Review",
    "segment": "home_reno",
-   "n": "482",
+   "n": "485",
    "med_age_days": "41"
   },
   {
    "filing_status": "QA Failed",
    "segment": "other_work",
-   "n": "470",
-   "med_age_days": "1824.5"
+   "n": "473",
+   "med_age_days": "1810"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
    "segment": "home_reno",
-   "n": "328",
-   "med_age_days": "925"
-  },
-  {
-   "filing_status": "OnHold-NoGoodCheck",
-   "segment": "other_work",
-   "n": "293",
-   "med_age_days": "1578"
+   "n": "325",
+   "med_age_days": "934"
   },
   {
    "filing_status": "Objections",
    "segment": "new_tower",
+   "n": "293",
+   "med_age_days": "227"
+  },
+  {
+   "filing_status": "OnHold-NoGoodCheck",
+   "segment": "other_work",
    "n": "290",
-   "med_age_days": "225"
+   "med_age_days": "1581.5"
   },
   {
    "filing_status": "Objections",
    "segment": "new_small_mf",
-   "n": "276",
-   "med_age_days": "305.5"
+   "n": "275",
+   "med_age_days": "315"
   },
   {
    "filing_status": "Plan Examiner Review",
    "segment": "new_house",
-   "n": "227",
-   "med_age_days": "153"
+   "n": "228",
+   "med_age_days": "154"
   },
   {
    "filing_status": "Pending Plan Examiner Assignment",
    "segment": "other_work",
-   "n": "200",
+   "n": "209",
    "med_age_days": "3"
   },
   {
    "filing_status": "Objections",
    "segment": "new_large_mf",
-   "n": "165",
-   "med_age_days": "218"
+   "n": "166",
+   "med_age_days": "219"
   },
   {
    "filing_status": "Incomplete",
    "segment": "home_reno",
-   "n": "146",
-   "med_age_days": "1353.5"
+   "n": "145",
+   "med_age_days": "1357"
   },
   {
    "filing_status": "On Hold  - Applicant Supersede Request Required",
    "segment": "other_work",
-   "n": "143",
-   "med_age_days": "1392"
+   "n": "138",
+   "med_age_days": "1394"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Applicant of Record",
    "segment": "other_work",
-   "n": "111",
-   "med_age_days": "1172"
-  },
-  {
-   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
-   "segment": "other_work",
-   "n": "110",
-   "med_age_days": "20"
+   "n": "109",
+   "med_age_days": "1180"
   },
   {
    "filing_status": "Prof Cert QA Review",
    "segment": "other_work",
-   "n": "79",
-   "med_age_days": "3"
+   "n": "100",
+   "med_age_days": "2"
+  },
+  {
+   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
+   "segment": "other_work",
+   "n": "96",
+   "med_age_days": "18.5"
   },
   {
    "filing_status": "On Hold - Special Inspector Withdrew",
    "segment": "other_work",
    "n": "79",
-   "med_age_days": "1354"
+   "med_age_days": "1355"
   },
   {
    "filing_status": "OnHold-NoGoodCheck",
    "segment": "home_reno",
    "n": "75",
-   "med_age_days": "1121"
-  },
-  {
-   "filing_status": "Pending CPE/ACPE Assignment",
-   "segment": "other_work",
-   "n": "74",
-   "med_age_days": "1"
+   "med_age_days": "1122"
   },
   {
    "filing_status": "QA Failed",
    "segment": "home_reno",
-   "n": "71",
-   "med_age_days": "1151"
+   "n": "70",
+   "med_age_days": "1220.5"
   },
   {
-   "filing_status": "Pending Prof Cert QA Assignment",
+   "filing_status": "Pending CPE/ACPE Assignment",
    "segment": "other_work",
-   "n": "70",
+   "n": "61",
    "med_age_days": "1"
   },
   {
    "filing_status": "Plan Examiner Review",
    "segment": "new_small_mf",
-   "n": "59",
-   "med_age_days": "175"
+   "n": "60",
+   "med_age_days": "157"
+  },
+  {
+   "filing_status": "Pending Prof Cert QA Assignment",
+   "segment": "other_work",
+   "n": "54",
+   "med_age_days": "1"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Applicant of Record",
    "segment": "home_reno",
-   "n": "40",
-   "med_age_days": "1141.5"
+   "n": "41",
+   "med_age_days": "1134"
   },
   {
    "filing_status": "Plan Examiner Review",
-   "segment": "new_tower",
-   "n": "40",
-   "med_age_days": "92.5"
+   "segment": "new_large_mf",
+   "n": "38",
+   "med_age_days": "117.5"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
    "segment": "new_house",
    "n": "37",
-   "med_age_days": "1086"
+   "med_age_days": "1087"
   },
   {
    "filing_status": "On Hold - Progress Inspector Withdrew",
    "segment": "other_work",
    "n": "37",
-   "med_age_days": "1667"
+   "med_age_days": "1668"
+  },
+  {
+   "filing_status": "Plan Examiner Review",
+   "segment": "new_tower",
+   "n": "36",
+   "med_age_days": "48.5"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Special Inspector",
    "segment": "other_work",
    "n": "35",
-   "med_age_days": "1605"
-  },
-  {
-   "filing_status": "Plan Examiner Review",
-   "segment": "new_large_mf",
-   "n": "35",
-   "med_age_days": "155"
-  },
-  {
-   "filing_status": "Pending Prof Cert QA Assignment",
-   "segment": "home_reno",
-   "n": "33",
-   "med_age_days": "1"
+   "med_age_days": "1606"
   },
   {
    "filing_status": "SO Plan Examiner Review",
    "segment": "other_work",
    "n": "30",
-   "med_age_days": "39"
+   "med_age_days": "43"
+  },
+  {
+   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
+   "segment": "home_reno",
+   "n": "29",
+   "med_age_days": "17"
+  },
+  {
+   "filing_status": "Prof Cert QA Review",
+   "segment": "home_reno",
+   "n": "26",
+   "med_age_days": "2"
   },
   {
    "filing_status": "Incomplete",
    "segment": "new_house",
    "n": "25",
-   "med_age_days": "168"
+   "med_age_days": "169"
   },
   {
-   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
+   "filing_status": "Pending Plan Examiner Assignment",
    "segment": "home_reno",
-   "n": "25",
-   "med_age_days": "15"
+   "n": "22",
+   "med_age_days": "2"
   },
   {
    "filing_status": "Pending CPE/ACPE Assignment",
@@ -3681,550 +3694,544 @@
    "filing_status": "On Hold - Pending Supersede of Progress Inspector",
    "segment": "other_work",
    "n": "19",
-   "med_age_days": "1249"
+   "med_age_days": "1250"
+  },
+  {
+   "filing_status": "Pending Prof Cert QA Assignment",
+   "segment": "home_reno",
+   "n": "19",
+   "med_age_days": "1"
   },
   {
    "filing_status": "On Hold  - Applicant Supersede Request Required",
    "segment": "home_reno",
-   "n": "19",
-   "med_age_days": "1163"
-  },
-  {
-   "filing_status": "Prof Cert QA Review",
-   "segment": "home_reno",
-   "n": "18",
-   "med_age_days": "2"
+   "n": "17",
+   "med_age_days": "1214"
   },
   {
    "filing_status": "On Hold - Special Inspector Withdrew",
    "segment": "home_reno",
    "n": "16",
-   "med_age_days": "1581"
-  },
-  {
-   "filing_status": "Pending Plan Examiner Assignment",
-   "segment": "home_reno",
-   "n": "15",
-   "med_age_days": "2"
+   "med_age_days": "1582"
   },
   {
    "filing_status": "Zoning Plan Examiner Review",
    "segment": "home_reno",
-   "n": "14",
-   "med_age_days": "25.5"
+   "n": "15",
+   "med_age_days": "29"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
    "segment": "new_small_mf",
-   "n": "13",
-   "med_age_days": "1225"
+   "n": "12",
+   "med_age_days": "1258"
   },
   {
    "filing_status": "On Hold - Applicant of Record Withdrawn",
    "segment": "other_work",
    "n": "12",
-   "med_age_days": "2322"
-  },
-  {
-   "filing_status": "Pending QA Assignment",
-   "segment": "other_work",
-   "n": "11",
-   "med_age_days": "1"
+   "med_age_days": "2323"
   },
   {
    "filing_status": "On Hold - Progress Inspector Withdrew",
    "segment": "home_reno",
    "n": "10",
-   "med_age_days": "1282.5"
-  },
-  {
-   "filing_status": "On Hold - Applicant of Record Withdrawn",
-   "segment": "home_reno",
-   "n": "9",
-   "med_age_days": "2680"
+   "med_age_days": "1283.5"
   },
   {
    "filing_status": "Pending Loft Board Submission",
    "segment": "other_work",
    "n": "9",
-   "med_age_days": "4"
+   "med_age_days": "5"
+  },
+  {
+   "filing_status": "On Hold - Applicant of Record Withdrawn",
+   "segment": "home_reno",
+   "n": "9",
+   "med_age_days": "2681"
   },
   {
    "filing_status": "Loft Board QA Failed",
    "segment": "other_work",
-   "n": "9",
-   "med_age_days": "48"
-  },
-  {
-   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
-   "segment": "new_house",
    "n": "8",
-   "med_age_days": "32"
+   "med_age_days": "43.5"
   },
   {
    "filing_status": "Intent to Revoke",
    "segment": "other_work",
    "n": "7",
-   "med_age_days": "2961"
+   "med_age_days": "2962"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
    "segment": "new_large_mf",
    "n": "6",
-   "med_age_days": "1024.5"
-  },
-  {
-   "filing_status": "On Hold - Pending Supersede of Special Inspector",
-   "segment": "home_reno",
-   "n": "6",
-   "med_age_days": "1580.5"
+   "med_age_days": "1025.5"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Special Inspector",
    "segment": "other_work",
    "n": "6",
-   "med_age_days": "1838"
+   "med_age_days": "1839"
   },
   {
-   "filing_status": "OnHold-NoGoodCheck",
-   "segment": "new_small_mf",
-   "n": "5",
-   "med_age_days": "1353"
+   "filing_status": "On Hold - Pending Supersede of Special Inspector",
+   "segment": "home_reno",
+   "n": "6",
+   "med_age_days": "1581.5"
   },
   {
-   "filing_status": "On Hold \u2013 Administrative Action",
-   "segment": "new_tower",
-   "n": "5",
-   "med_age_days": "1626"
-  },
-  {
-   "filing_status": "Pending Plan Examiner Assignment",
-   "segment": "new_tower",
-   "n": "5",
-   "med_age_days": "6"
+   "filing_status": "Pending QA Assignment",
+   "segment": "other_work",
+   "n": "6",
+   "med_age_days": "1"
   },
   {
    "filing_status": "Revoked",
    "segment": "other_work",
    "n": "5",
-   "med_age_days": "315"
+   "med_age_days": "316"
+  },
+  {
+   "filing_status": "On Hold \u2013 Administrative Action",
+   "segment": "new_tower",
+   "n": "5",
+   "med_age_days": "1627"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Site Safety Manager",
    "segment": "other_work",
-   "n": "4",
-   "med_age_days": "714.5"
+   "n": "5",
+   "med_age_days": "737"
   },
   {
-   "filing_status": "Incomplete",
+   "filing_status": "OnHold-NoGoodCheck",
    "segment": "new_small_mf",
-   "n": "4",
-   "med_age_days": "98"
+   "n": "5",
+   "med_age_days": "1354"
   },
   {
    "filing_status": "SO Plan Examiner Review",
    "segment": "new_house",
    "n": "4",
-   "med_age_days": "17"
+   "med_age_days": "18"
+  },
+  {
+   "filing_status": "Pending Plan Examiner Assignment",
+   "segment": "new_tower",
+   "n": "4",
+   "med_age_days": "6.5"
+  },
+  {
+   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
+   "segment": "new_house",
+   "n": "4",
+   "med_age_days": "27"
   },
   {
    "filing_status": "Pending Plan Examiner Assignment",
    "segment": "new_small_mf",
    "n": "4",
-   "med_age_days": "3"
+   "med_age_days": "3.5"
   },
   {
-   "filing_status": "Pending Plan Examiner Assignment",
-   "segment": "new_large_mf",
+   "filing_status": "Incomplete",
+   "segment": "new_small_mf",
    "n": "4",
-   "med_age_days": "2.5"
-  },
-  {
-   "filing_status": "Pending CPE/ACPE Assignment",
-   "segment": "new_large_mf",
-   "n": "3",
-   "med_age_days": "2"
-  },
-  {
-   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
-   "segment": "new_tower",
-   "n": "3",
-   "med_age_days": "1716"
-  },
-  {
-   "filing_status": "OnHold-NoGoodCheck",
-   "segment": "new_house",
-   "n": "3",
-   "med_age_days": "932.5"
-  },
-  {
-   "filing_status": "Pending Plan Examiner Assignment",
-   "segment": "new_house",
-   "n": "3",
-   "med_age_days": "8"
+   "med_age_days": "99"
   },
   {
    "filing_status": "QA Failed",
    "segment": "new_house",
    "n": "3",
-   "med_age_days": "78"
+   "med_age_days": "79"
+  },
+  {
+   "filing_status": "OnHold-NoGoodCheck",
+   "segment": "new_house",
+   "n": "3",
+   "med_age_days": "933.5"
+  },
+  {
+   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
+   "segment": "new_tower",
+   "n": "3",
+   "med_age_days": "1717"
   },
   {
    "filing_status": "On Hold",
    "segment": "other_work",
    "n": "3",
-   "med_age_days": "2309"
+   "med_age_days": "2310"
   },
   {
-   "filing_status": "Zoning Plan Examiner Review",
+   "filing_status": "Pending Plan Examiner Assignment",
+   "segment": "new_large_mf",
+   "n": "3",
+   "med_age_days": "4"
+  },
+  {
+   "filing_status": "Inspection Complete",
    "segment": "other_work",
    "n": "2",
-   "med_age_days": "534"
+   "med_age_days": "2981.5"
+  },
+  {
+   "filing_status": "Pending Plan Examiner Assignment",
+   "segment": "new_house",
+   "n": "2",
+   "med_age_days": "11"
   },
   {
    "filing_status": "On Hold \u2013 Pending Supersede of Owner",
    "segment": "other_work",
    "n": "2",
-   "med_age_days": "1794"
-  },
-  {
-   "filing_status": "Pending CPE/ACPE Assignment",
-   "segment": "new_small_mf",
-   "n": "2",
-   "med_age_days": "1.5"
+   "med_age_days": "1795"
   },
   {
    "filing_status": "Permit Entire - BC/DBC Review Objections",
    "segment": "other_work",
    "n": "2",
-   "med_age_days": "1719.5"
+   "med_age_days": "1720.5"
   },
   {
-   "filing_status": "Intent to Revoke - Audit Review in Progress",
+   "filing_status": "Zoning Plan Examiner Review",
    "segment": "other_work",
    "n": "2",
-   "med_age_days": "632.5"
+   "med_age_days": "535"
   },
   {
-   "filing_status": "Inspection Complete",
+   "filing_status": "Loft Board Review",
    "segment": "other_work",
    "n": "2",
-   "med_age_days": "2980.5"
+   "med_age_days": "49.5"
   },
   {
    "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
    "segment": "new_small_mf",
    "n": "2",
-   "med_age_days": "32.5"
+   "med_age_days": "33.5"
   },
   {
-   "filing_status": "Awaiting Energy Approval",
-   "segment": "new_house",
-   "n": "1",
-   "med_age_days": "1537"
-  },
-  {
-   "filing_status": "Pending QA Review",
+   "filing_status": "Intent to Revoke - Audit Review in Progress",
    "segment": "other_work",
-   "n": "1",
-   "med_age_days": "7"
-  },
-  {
-   "filing_status": "Pending Zoning Plan Examiner Assignment",
-   "segment": "other_work",
-   "n": "1",
-   "med_age_days": "20"
+   "n": "2",
+   "med_age_days": "633.5"
   },
   {
    "filing_status": "Permit Entire - BC/DBC Review",
    "segment": "other_work",
    "n": "1",
-   "med_age_days": "400"
+   "med_age_days": "401"
   },
   {
    "filing_status": "Permit Entire - BC/DBC Review Objections",
    "segment": "home_reno",
    "n": "1",
-   "med_age_days": "1872"
+   "med_age_days": "1873"
   },
   {
    "filing_status": "Permit Entire - BC/DBC Review Objections",
    "segment": "new_house",
    "n": "1",
-   "med_age_days": "1003"
-  },
-  {
-   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
-   "segment": "new_house",
-   "n": "1",
-   "med_age_days": "930"
-  },
-  {
-   "filing_status": "Work Without Permit CPE/ACPE Review (LL 158/17)",
-   "segment": "other_work",
-   "n": "1",
-   "med_age_days": "1"
+   "med_age_days": "1004"
   },
   {
    "filing_status": "Intent to Revoke - Audit Review in Progress",
    "segment": "new_large_mf",
    "n": "1",
-   "med_age_days": "1564"
-  },
-  {
-   "filing_status": "On Hold - Progress Inspector Withdrew",
-   "segment": "new_house",
-   "n": "1",
-   "med_age_days": "1249"
-  },
-  {
-   "filing_status": "Intent to Revoke",
-   "segment": "home_reno",
-   "n": "1",
-   "med_age_days": "3110"
-  },
-  {
-   "filing_status": "Awaiting Energy Approval",
-   "segment": "new_small_mf",
-   "n": "1",
-   "med_age_days": "1581"
-  },
-  {
-   "filing_status": "Inspection Complete",
-   "segment": "home_reno",
-   "n": "1",
-   "med_age_days": "2401"
-  },
-  {
-   "filing_status": "Incomplete",
-   "segment": "new_tower",
-   "n": "1",
-   "med_age_days": "10"
-  },
-  {
-   "filing_status": "On Hold \u2013 Pending Withdrawal of TR",
-   "segment": "other_work",
-   "n": "1",
-   "med_age_days": "315"
-  },
-  {
-   "filing_status": "Incomplete",
-   "segment": "new_large_mf",
-   "n": "1",
-   "med_age_days": "35"
+   "med_age_days": "1565"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Special Inspector",
    "segment": "home_reno",
    "n": "1",
-   "med_age_days": "330"
+   "med_age_days": "331"
   },
   {
-   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
-   "segment": "new_large_mf",
-   "n": "1",
-   "med_age_days": "1554"
-  },
-  {
-   "filing_status": "QA Review for LOC",
+   "filing_status": "Intent to Revoke",
    "segment": "home_reno",
    "n": "1",
-   "med_age_days": "1042"
+   "med_age_days": "3111"
+  },
+  {
+   "filing_status": "Inspection Complete",
+   "segment": "home_reno",
+   "n": "1",
+   "med_age_days": "2402"
+  },
+  {
+   "filing_status": "Incomplete",
+   "segment": "new_tower",
+   "n": "1",
+   "med_age_days": "11"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Construction Superintendent",
    "segment": "home_reno",
    "n": "1",
-   "med_age_days": "1486"
+   "med_age_days": "1487"
+  },
+  {
+   "filing_status": "Incomplete",
+   "segment": "new_large_mf",
+   "n": "1",
+   "med_age_days": "36"
+  },
+  {
+   "filing_status": "On Hold  - Applicant Supersede Request Required",
+   "segment": "new_house",
+   "n": "1",
+   "med_age_days": "1471"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Special Inspector",
    "segment": "new_house",
    "n": "1",
-   "med_age_days": "1624"
+   "med_age_days": "1625"
   },
   {
-   "filing_status": "Pending L2 Review",
+   "filing_status": "QA Review for LOC",
+   "segment": "home_reno",
+   "n": "1",
+   "med_age_days": "1043"
+  },
+  {
+   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
+   "segment": "new_house",
+   "n": "1",
+   "med_age_days": "931"
+  },
+  {
+   "filing_status": "Awaiting Energy Approval",
+   "segment": "new_small_mf",
+   "n": "1",
+   "med_age_days": "1582"
+  },
+  {
+   "filing_status": "Work Without Permit CPE/ACPE Review (LL 158/17)",
    "segment": "other_work",
    "n": "1",
-   "med_age_days": "1520"
+   "med_age_days": "2"
   },
   {
    "filing_status": "On Hold - Admin Review",
    "segment": "other_work",
    "n": "1",
-   "med_age_days": "576"
+   "med_age_days": "577"
+  },
+  {
+   "filing_status": "Pending L2 Review",
+   "segment": "other_work",
+   "n": "1",
+   "med_age_days": "1521"
   },
   {
    "filing_status": "Objections and Referred to Energy",
    "segment": "other_work",
    "n": "1",
-   "med_age_days": "192"
+   "med_age_days": "193"
   },
   {
-   "filing_status": "On Hold  - Applicant Supersede Request Required",
+   "filing_status": "Pending CPE/ACPE Assignment",
+   "segment": "new_small_mf",
+   "n": "1",
+   "med_age_days": "1"
+  },
+  {
+   "filing_status": "Pending CPE/ACPE Assignment",
+   "segment": "new_large_mf",
+   "n": "1",
+   "med_age_days": "2"
+  },
+  {
+   "filing_status": "Pending CPE/ACPE Assignment",
    "segment": "new_house",
    "n": "1",
-   "med_age_days": "1470"
+   "med_age_days": "1"
+  },
+  {
+   "filing_status": "Awaiting Energy Approval",
+   "segment": "new_house",
+   "n": "1",
+   "med_age_days": "1538"
+  },
+  {
+   "filing_status": "On Hold - Progress Inspector Withdrew",
+   "segment": "new_house",
+   "n": "1",
+   "med_age_days": "1250"
+  },
+  {
+   "filing_status": "On Hold \u2013 Pending Withdrawal of TR",
+   "segment": "other_work",
+   "n": "1",
+   "med_age_days": "316"
+  },
+  {
+   "filing_status": "Pending Zoning Plan Examiner Assignment",
+   "segment": "other_work",
+   "n": "1",
+   "med_age_days": "21"
   },
   {
    "filing_status": "Objections",
-   "n": "1904",
-   "med_age_days": "403.5",
+   "n": "1905",
+   "med_age_days": "403",
    "segment": "new_housing"
   },
   {
    "filing_status": "Plan Examiner Review",
-   "n": "361",
-   "med_age_days": "153",
+   "n": "362",
+   "med_age_days": "148",
    "segment": "new_housing"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
-   "n": "61",
-   "med_age_days": "1156",
+   "n": "60",
+   "med_age_days": "1153",
    "segment": "new_housing"
   },
   {
    "filing_status": "Incomplete",
    "n": "31",
-   "med_age_days": "132",
+   "med_age_days": "133",
    "segment": "new_housing"
   },
   {
    "filing_status": "Pending Plan Examiner Assignment",
-   "n": "16",
-   "med_age_days": "3",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
-   "n": "10",
-   "med_age_days": "32.5",
+   "n": "13",
+   "med_age_days": "4",
    "segment": "new_housing"
   },
   {
    "filing_status": "OnHold-NoGoodCheck",
    "n": "8",
-   "med_age_days": "952",
+   "med_age_days": "953",
    "segment": "new_housing"
   },
   {
-   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
-   "n": "5",
-   "med_age_days": "1554",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "Pending CPE/ACPE Assignment",
-   "n": "5",
-   "med_age_days": "2",
+   "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
+   "n": "6",
+   "med_age_days": "29.5",
    "segment": "new_housing"
   },
   {
    "filing_status": "SO Plan Examiner Review",
    "n": "4",
-   "med_age_days": "17",
+   "med_age_days": "18",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "On Hold - Pending Supersede of Applicant of Record",
+   "n": "4",
+   "med_age_days": "1324",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "Pending CPE/ACPE Assignment",
+   "n": "3",
+   "med_age_days": "1",
    "segment": "new_housing"
   },
   {
    "filing_status": "QA Failed",
    "n": "3",
-   "med_age_days": "78",
+   "med_age_days": "79",
    "segment": "new_housing"
   },
   {
    "filing_status": "Awaiting Energy Approval",
    "n": "2",
-   "med_age_days": "1559",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "On Hold  - Applicant Supersede Request Required",
-   "n": "1",
-   "med_age_days": "1470",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "On Hold - Progress Inspector Withdrew",
-   "n": "1",
-   "med_age_days": "1249",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "Intent to Revoke - Audit Review in Progress",
-   "n": "1",
-   "med_age_days": "1564",
-   "segment": "new_housing"
-  },
-  {
-   "filing_status": "Permit Entire - BC/DBC Review Objections",
-   "n": "1",
-   "med_age_days": "1003",
+   "med_age_days": "1560",
    "segment": "new_housing"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Special Inspector",
    "n": "1",
-   "med_age_days": "1624",
+   "med_age_days": "1625",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "Intent to Revoke - Audit Review in Progress",
+   "n": "1",
+   "med_age_days": "1565",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "Permit Entire - BC/DBC Review Objections",
+   "n": "1",
+   "med_age_days": "1004",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "On Hold - Progress Inspector Withdrew",
+   "n": "1",
+   "med_age_days": "1250",
+   "segment": "new_housing"
+  },
+  {
+   "filing_status": "On Hold  - Applicant Supersede Request Required",
+   "n": "1",
+   "med_age_days": "1471",
    "segment": "new_housing"
   }
  ],
  "seg_queue_aging": [
   {
    "segment": "home_reno",
-   "n": "3786",
+   "n": "3783",
    "age_0_30": "391",
-   "age_31_90": "338",
-   "age_91_365": "671",
-   "age_over_1yr": "2364"
+   "age_31_90": "340",
+   "age_91_365": "670",
+   "age_over_1yr": "2360"
   },
   {
    "segment": "new_house",
-   "n": "1489",
-   "age_0_30": "83",
-   "age_31_90": "145",
-   "age_91_365": "442",
-   "age_over_1yr": "818"
+   "n": "1484",
+   "age_0_30": "82",
+   "age_31_90": "141",
+   "age_91_365": "444",
+   "age_over_1yr": "816"
   },
   {
    "segment": "new_large_mf",
    "n": "216",
-   "age_0_30": "20",
-   "age_31_90": "27",
-   "age_91_365": "109",
+   "age_0_30": "18",
+   "age_31_90": "28",
+   "age_91_365": "110",
    "age_over_1yr": "60"
   },
   {
    "segment": "new_small_mf",
-   "n": "366",
+   "n": "364",
    "age_0_30": "19",
    "age_31_90": "43",
-   "age_91_365": "157",
-   "age_over_1yr": "145"
+   "age_91_365": "156",
+   "age_over_1yr": "144"
   },
   {
    "segment": "new_tower",
-   "n": "344",
+   "n": "342",
    "age_0_30": "20",
    "age_31_90": "37",
-   "age_91_365": "173",
+   "age_91_365": "171",
    "age_over_1yr": "114"
   },
   {
    "segment": "other_work",
-   "n": "14476",
-   "age_0_30": "1632",
-   "age_31_90": "1472",
-   "age_91_365": "2802",
-   "age_over_1yr": "8504"
+   "n": "14463",
+   "age_0_30": "1623",
+   "age_31_90": "1479",
+   "age_91_365": "2806",
+   "age_over_1yr": "8489"
   },
   {
-   "n": "2415",
-   "age_0_30": "142",
-   "age_31_90": "252",
+   "n": "2406",
+   "age_0_30": "139",
+   "age_31_90": "249",
    "age_91_365": "881",
-   "age_over_1yr": "1137",
+   "age_over_1yr": "1134",
    "segment": "new_housing"
   }
  ],
@@ -4232,9 +4239,9 @@
   {
    "segment": "home_reno",
    "filing_review_type": "Professional Certification",
-   "n": "9642",
+   "n": "9679",
    "med_days": "1",
-   "within_6wk": "9604"
+   "within_6wk": "9641"
   },
   {
    "segment": "new_house",
@@ -4253,22 +4260,22 @@
   {
    "segment": "other_work",
    "filing_review_type": "Professional Certification",
-   "n": "22986",
+   "n": "23069",
    "med_days": "1",
-   "within_6wk": "22806"
+   "within_6wk": "22889"
   },
   {
    "segment": "home_reno",
    "filing_review_type": "Standard Plan Examination",
-   "n": "5064",
+   "n": "5076",
    "med_days": "36",
-   "within_6wk": "2793"
+   "within_6wk": "2798"
   },
   {
    "segment": "new_house",
    "filing_review_type": "Standard Plan Examination",
-   "n": "800",
-   "med_days": "167",
+   "n": "804",
+   "med_days": "168",
    "within_6wk": "24"
   },
   {
@@ -4281,23 +4288,23 @@
   {
    "segment": "new_small_mf",
    "filing_review_type": "Standard Plan Examination",
-   "n": "227",
-   "med_days": "204",
+   "n": "229",
+   "med_days": "207",
    "within_6wk": "2"
   },
   {
    "segment": "new_tower",
    "filing_review_type": "Standard Plan Examination",
-   "n": "152",
+   "n": "154",
    "med_days": "293",
    "within_6wk": "0"
   },
   {
    "segment": "other_work",
    "filing_review_type": "Standard Plan Examination",
-   "n": "23321",
+   "n": "23423",
    "med_days": "31",
-   "within_6wk": "13728"
+   "within_6wk": "13786"
   },
   {
    "filing_review_type": "Professional Certification",
@@ -4308,8 +4315,8 @@
   },
   {
    "filing_review_type": "Standard Plan Examination",
-   "n": "1312",
-   "med_days": "197",
+   "n": "1320",
+   "med_days": "198",
    "within_6wk": "26",
    "segment": "new_housing"
   }
@@ -4317,189 +4324,189 @@
  "dobnow_queue": [
   {
    "filing_status": "Objections",
-   "n": "13597",
-   "med_age_days": "723"
+   "n": "13586",
+   "med_age_days": "724"
   },
   {
    "filing_status": "Plan Examiner Review",
-   "n": "2744",
-   "med_age_days": "51"
+   "n": "2770",
+   "med_age_days": "50"
   },
   {
    "filing_status": "On Hold \u2013 Administrative Action",
-   "n": "1233",
-   "med_age_days": "1000"
+   "n": "1225",
+   "med_age_days": "1002"
   },
   {
    "filing_status": "Incomplete",
-   "n": "833",
-   "med_age_days": "1659"
+   "n": "831",
+   "med_age_days": "1662"
   },
   {
    "filing_status": "QA Failed",
-   "n": "544",
-   "med_age_days": "1732.5"
+   "n": "546",
+   "med_age_days": "1729.5"
   },
   {
    "filing_status": "OnHold-NoGoodCheck",
-   "n": "376",
-   "med_age_days": "1390"
+   "n": "373",
+   "med_age_days": "1393"
   },
   {
    "filing_status": "Pending Plan Examiner Assignment",
-   "n": "231",
+   "n": "244",
    "med_age_days": "3"
   },
   {
    "filing_status": "On Hold  - Applicant Supersede Request Required",
-   "n": "163",
-   "med_age_days": "1381"
+   "n": "156",
+   "med_age_days": "1393"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Applicant of Record",
-   "n": "156",
-   "med_age_days": "1154"
+   "n": "154",
+   "med_age_days": "1155"
   },
   {
    "filing_status": "Chief Plan Examiner/ Assistant Chief Plan Examiner Review",
-   "n": "145",
-   "med_age_days": "20"
-  },
-  {
-   "filing_status": "Pending Prof Cert QA Assignment",
-   "n": "103",
-   "med_age_days": "1"
-  },
-  {
-   "filing_status": "Pending CPE/ACPE Assignment",
-   "n": "100",
-   "med_age_days": "1"
+   "n": "131",
+   "med_age_days": "21"
   },
   {
    "filing_status": "Prof Cert QA Review",
-   "n": "97",
-   "med_age_days": "3"
+   "n": "126",
+   "med_age_days": "2"
   },
   {
    "filing_status": "On Hold - Special Inspector Withdrew",
    "n": "95",
-   "med_age_days": "1385"
+   "med_age_days": "1386"
+  },
+  {
+   "filing_status": "Pending CPE/ACPE Assignment",
+   "n": "85",
+   "med_age_days": "1"
+  },
+  {
+   "filing_status": "Pending Prof Cert QA Assignment",
+   "n": "73",
+   "med_age_days": "1"
   },
   {
    "filing_status": "On Hold - Progress Inspector Withdrew",
    "n": "48",
-   "med_age_days": "1599.5"
+   "med_age_days": "1600.5"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Special Inspector",
    "n": "42",
-   "med_age_days": "1614.5"
+   "med_age_days": "1615.5"
   },
   {
    "filing_status": "SO Plan Examiner Review",
    "n": "34",
-   "med_age_days": "34"
+   "med_age_days": "40"
   },
   {
    "filing_status": "On Hold - Applicant of Record Withdrawn",
    "n": "21",
-   "med_age_days": "2471"
+   "med_age_days": "2472"
   },
   {
    "filing_status": "On Hold - Pending Supersede of Progress Inspector",
    "n": "19",
-   "med_age_days": "1249"
+   "med_age_days": "1250"
   },
   {
    "filing_status": "Zoning Plan Examiner Review",
-   "n": "16",
-   "med_age_days": "25.5"
-  },
-  {
-   "filing_status": "Pending QA Assignment",
-   "n": "11",
-   "med_age_days": "1"
+   "n": "17",
+   "med_age_days": "29"
   },
   {
    "filing_status": "Pending Loft Board Submission",
    "n": "9",
-   "med_age_days": "4"
-  },
-  {
-   "filing_status": "Loft Board QA Failed",
-   "n": "9",
-   "med_age_days": "48"
+   "med_age_days": "5"
   },
   {
    "filing_status": "Intent to Revoke",
    "n": "8",
-   "med_age_days": "2962"
+   "med_age_days": "2963"
+  },
+  {
+   "filing_status": "Loft Board QA Failed",
+   "n": "8",
+   "med_age_days": "43.5"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Special Inspector",
    "n": "7",
-   "med_age_days": "1661"
+   "med_age_days": "1662"
+  },
+  {
+   "filing_status": "Pending QA Assignment",
+   "n": "6",
+   "med_age_days": "1"
   },
   {
    "filing_status": "Revoked",
    "n": "5",
-   "med_age_days": "315"
+   "med_age_days": "316"
   },
   {
    "filing_status": "On Hold - Pending Withdrawal of Site Safety Manager",
-   "n": "4",
-   "med_age_days": "714.5"
+   "n": "5",
+   "med_age_days": "737"
   },
   {
    "filing_status": "Permit Entire - BC/DBC Review Objections",
    "n": "4",
-   "med_age_days": "1453.5"
+   "med_age_days": "1454.5"
   },
   {
-   "filing_status": "Intent to Revoke - Audit Review in Progress",
+   "filing_status": "On Hold",
    "n": "3",
-   "med_age_days": "667"
+   "med_age_days": "2310"
   },
   {
    "filing_status": "Inspection Complete",
    "n": "3",
-   "med_age_days": "2952"
+   "med_age_days": "2953"
   }
  ],
  "dobnow_queue_aging": [
   {
-   "n": "20677",
-   "age_0_30": "2165",
-   "age_31_90": "2062",
-   "age_91_365": "4354",
-   "age_over_1yr": "12005"
+   "n": "20652",
+   "age_0_30": "2153",
+   "age_31_90": "2068",
+   "age_91_365": "4357",
+   "age_over_1yr": "11983"
   }
  ],
  "bis_stages": {
   "prefile_to_assigned": {
-   "n": 23603,
+   "n": 23591,
    "median_days": 4,
-   "p75_days": 1125.0
+   "p75_days": 1114.0
   },
   "assigned_to_approved": {
-   "n": 15605,
+   "n": 15627,
    "median_days": 6,
    "p75_days": 57.0
   },
   "approved_to_permitted": {
-   "n": 25474,
+   "n": 25476,
    "median_days": 17.0,
    "p75_days": 155.0
   },
   "permitted_to_signoff": {
-   "n": 25500,
-   "median_days": 2097.0,
-   "p75_days": 3291.75
+   "n": 25501,
+   "median_days": 2098,
+   "p75_days": 3293.0
   },
   "prefile_to_signoff": {
    "n": 32000,
    "median_days": 2452.0,
-   "p75_days": 3471.0
+   "p75_days": 3472.0
   },
   "sample_note": "Sample of 32000 BIS jobs signed off 2022-2025 (up to 8,000/yr); milestone dates are text-typed in the source, parsed client-side."
  },
@@ -4528,7 +4535,7 @@
   },
   {
    "yr": "2026-01-01T00:00:00.000",
-   "n": "377823"
+   "n": "380332"
   }
  ],
  "dep_yearly_volume": [
@@ -4602,13 +4609,13 @@
  "clocks_permit_seg": [
   {
    "segment": "home_reno",
-   "n": "49459",
+   "n": "49509",
    "med_approval": "3",
    "med_first_permit": "16"
   },
   {
    "segment": "new_house",
-   "n": "3002",
+   "n": "3011",
    "med_approval": "124",
    "med_first_permit": "255"
   },
@@ -4632,12 +4639,12 @@
   },
   {
    "segment": "other_work",
-   "n": "153875",
+   "n": "154061",
    "med_approval": "4",
    "med_first_permit": "34"
   },
   {
-   "n": "4128",
+   "n": "4137",
    "med_approval": "155",
    "med_first_permit": "304",
    "segment": "new_housing"
@@ -4645,28 +4652,597 @@
  ],
  "clocks_permit_all": [
   {
-   "n": "207462",
+   "n": "207707",
    "med_approval": "4",
    "med_first_permit": "30"
   }
  ],
+ "delivery_quarterly": [
+  {
+   "segment": "new_housing",
+   "period": "2021-Q4",
+   "n": 3,
+   "med_days": 214,
+   "units": 0
+  },
+  {
+   "segment": "new_housing",
+   "period": "2022-Q1",
+   "n": 16,
+   "med_days": 300,
+   "units": 13
+  },
+  {
+   "segment": "new_housing",
+   "period": "2022-Q2",
+   "n": 31,
+   "med_days": 357,
+   "units": 29
+  },
+  {
+   "segment": "new_housing",
+   "period": "2022-Q3",
+   "n": 42,
+   "med_days": 394,
+   "units": 52
+  },
+  {
+   "segment": "new_housing",
+   "period": "2022-Q4",
+   "n": 63,
+   "med_days": 407,
+   "units": 240
+  },
+  {
+   "segment": "new_housing",
+   "period": "2023-Q1",
+   "n": 99,
+   "med_days": 422,
+   "units": 291
+  },
+  {
+   "segment": "new_housing",
+   "period": "2023-Q2",
+   "n": 111,
+   "med_days": 473,
+   "units": 594
+  },
+  {
+   "segment": "new_housing",
+   "period": "2023-Q3",
+   "n": 117,
+   "med_days": 585,
+   "units": 672
+  },
+  {
+   "segment": "new_housing",
+   "period": "2023-Q4",
+   "n": 155,
+   "med_days": 631,
+   "units": 1801
+  },
+  {
+   "segment": "new_housing",
+   "period": "2024-Q1",
+   "n": 165,
+   "med_days": 669,
+   "units": 1714
+  },
+  {
+   "segment": "new_housing",
+   "period": "2024-Q2",
+   "n": 204,
+   "med_days": 750,
+   "units": 2177
+  },
+  {
+   "segment": "new_housing",
+   "period": "2024-Q3",
+   "n": 212,
+   "med_days": 860,
+   "units": 4223
+  },
+  {
+   "segment": "new_housing",
+   "period": "2024-Q4",
+   "n": 223,
+   "med_days": 881,
+   "units": 3715
+  },
+  {
+   "segment": "new_housing",
+   "period": "2025-Q1",
+   "n": 186,
+   "med_days": 754,
+   "units": 4361
+  },
+  {
+   "segment": "new_housing",
+   "period": "2025-Q2",
+   "n": 265,
+   "med_days": 767,
+   "units": 6193
+  },
+  {
+   "segment": "new_housing",
+   "period": "2025-Q3",
+   "n": 195,
+   "med_days": 906,
+   "units": 5715
+  },
+  {
+   "segment": "new_housing",
+   "period": "2025-Q4",
+   "n": 209,
+   "med_days": 898,
+   "units": 5539
+  },
+  {
+   "segment": "new_housing",
+   "period": "2026-Q1",
+   "n": 209,
+   "med_days": 881,
+   "units": 5780
+  },
+  {
+   "segment": "new_housing",
+   "period": "2026-Q2",
+   "n": 251,
+   "med_days": 1002,
+   "units": 6646
+  },
+  {
+   "segment": "new_house",
+   "period": "2021-Q4",
+   "n": 3,
+   "med_days": 214,
+   "units": 0
+  },
+  {
+   "segment": "new_house",
+   "period": "2022-Q1",
+   "n": 16,
+   "med_days": 300,
+   "units": 13
+  },
+  {
+   "segment": "new_house",
+   "period": "2022-Q2",
+   "n": 31,
+   "med_days": 357,
+   "units": 29
+  },
+  {
+   "segment": "new_house",
+   "period": "2022-Q3",
+   "n": 41,
+   "med_days": 391,
+   "units": 45
+  },
+  {
+   "segment": "new_house",
+   "period": "2022-Q4",
+   "n": 57,
+   "med_days": 397,
+   "units": 69
+  },
+  {
+   "segment": "new_house",
+   "period": "2023-Q1",
+   "n": 92,
+   "med_days": 418,
+   "units": 95
+  },
+  {
+   "segment": "new_house",
+   "period": "2023-Q2",
+   "n": 93,
+   "med_days": 437,
+   "units": 95
+  },
+  {
+   "segment": "new_house",
+   "period": "2023-Q3",
+   "n": 95,
+   "med_days": 545,
+   "units": 99
+  },
+  {
+   "segment": "new_house",
+   "period": "2023-Q4",
+   "n": 113,
+   "med_days": 579,
+   "units": 118
+  },
+  {
+   "segment": "new_house",
+   "period": "2024-Q1",
+   "n": 126,
+   "med_days": 638,
+   "units": 142
+  },
+  {
+   "segment": "new_house",
+   "period": "2024-Q2",
+   "n": 154,
+   "med_days": 704,
+   "units": 177
+  },
+  {
+   "segment": "new_house",
+   "period": "2024-Q3",
+   "n": 149,
+   "med_days": 713,
+   "units": 179
+  },
+  {
+   "segment": "new_house",
+   "period": "2024-Q4",
+   "n": 161,
+   "med_days": 687,
+   "units": 201
+  },
+  {
+   "segment": "new_house",
+   "period": "2025-Q1",
+   "n": 126,
+   "med_days": 624,
+   "units": 134
+  },
+  {
+   "segment": "new_house",
+   "period": "2025-Q2",
+   "n": 198,
+   "med_days": 670,
+   "units": 220
+  },
+  {
+   "segment": "new_house",
+   "period": "2025-Q3",
+   "n": 133,
+   "med_days": 807,
+   "units": 144
+  },
+  {
+   "segment": "new_house",
+   "period": "2025-Q4",
+   "n": 156,
+   "med_days": 734,
+   "units": 202
+  },
+  {
+   "segment": "new_house",
+   "period": "2026-Q1",
+   "n": 132,
+   "med_days": 800,
+   "units": 185
+  },
+  {
+   "segment": "new_house",
+   "period": "2026-Q2",
+   "n": 157,
+   "med_days": 867,
+   "units": 198
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2022-Q3",
+   "n": 1,
+   "med_days": 521,
+   "units": 7
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2022-Q4",
+   "n": 3,
+   "med_days": 583,
+   "units": 29
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2023-Q1",
+   "n": 3,
+   "med_days": 422,
+   "units": 44
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2023-Q2",
+   "n": 11,
+   "med_days": 669,
+   "units": 135
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2023-Q3",
+   "n": 13,
+   "med_days": 777,
+   "units": 160
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2023-Q4",
+   "n": 19,
+   "med_days": 652,
+   "units": 234
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2024-Q1",
+   "n": 16,
+   "med_days": 734,
+   "units": 176
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2024-Q2",
+   "n": 31,
+   "med_days": 854,
+   "units": 393
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2024-Q3",
+   "n": 38,
+   "med_days": 993,
+   "units": 475
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2024-Q4",
+   "n": 37,
+   "med_days": 974,
+   "units": 434
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2025-Q1",
+   "n": 25,
+   "med_days": 1042,
+   "units": 312
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2025-Q2",
+   "n": 26,
+   "med_days": 1062,
+   "units": 319
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2025-Q3",
+   "n": 25,
+   "med_days": 1027,
+   "units": 230
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2025-Q4",
+   "n": 19,
+   "med_days": 1311,
+   "units": 188
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2026-Q1",
+   "n": 28,
+   "med_days": 940,
+   "units": 322
+  },
+  {
+   "segment": "new_small_mf",
+   "period": "2026-Q2",
+   "n": 46,
+   "med_days": 1036,
+   "units": 511
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2022-Q4",
+   "n": 3,
+   "med_days": 596,
+   "units": 142
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2023-Q1",
+   "n": 4,
+   "med_days": 571,
+   "units": 152
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2023-Q2",
+   "n": 6,
+   "med_days": 544,
+   "units": 263
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2023-Q3",
+   "n": 9,
+   "med_days": 600,
+   "units": 413
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2023-Q4",
+   "n": 19,
+   "med_days": 665,
+   "units": 877
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2024-Q1",
+   "n": 20,
+   "med_days": 736,
+   "units": 962
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2024-Q2",
+   "n": 13,
+   "med_days": 953,
+   "units": 705
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2024-Q3",
+   "n": 11,
+   "med_days": 1058,
+   "units": 609
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2024-Q4",
+   "n": 13,
+   "med_days": 1051,
+   "units": 675
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2025-Q1",
+   "n": 16,
+   "med_days": 1098,
+   "units": 873
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2025-Q2",
+   "n": 22,
+   "med_days": 1146,
+   "units": 1209
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2025-Q3",
+   "n": 16,
+   "med_days": 1278,
+   "units": 956
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2025-Q4",
+   "n": 10,
+   "med_days": 1344,
+   "units": 527
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2026-Q1",
+   "n": 24,
+   "med_days": 1190,
+   "units": 1303
+  },
+  {
+   "segment": "new_large_mf",
+   "period": "2026-Q2",
+   "n": 20,
+   "med_days": 1366,
+   "units": 916
+  },
+  {
+   "segment": "new_tower",
+   "period": "2023-Q2",
+   "n": 1,
+   "med_days": 720,
+   "units": 101
+  },
+  {
+   "segment": "new_tower",
+   "period": "2023-Q4",
+   "n": 4,
+   "med_days": 856,
+   "units": 572
+  },
+  {
+   "segment": "new_tower",
+   "period": "2024-Q1",
+   "n": 3,
+   "med_days": 987,
+   "units": 434
+  },
+  {
+   "segment": "new_tower",
+   "period": "2024-Q2",
+   "n": 6,
+   "med_days": 848,
+   "units": 902
+  },
+  {
+   "segment": "new_tower",
+   "period": "2024-Q3",
+   "n": 14,
+   "med_days": 970,
+   "units": 2960
+  },
+  {
+   "segment": "new_tower",
+   "period": "2024-Q4",
+   "n": 12,
+   "med_days": 1120,
+   "units": 2405
+  },
+  {
+   "segment": "new_tower",
+   "period": "2025-Q1",
+   "n": 19,
+   "med_days": 1169,
+   "units": 3042
+  },
+  {
+   "segment": "new_tower",
+   "period": "2025-Q2",
+   "n": 19,
+   "med_days": 1272,
+   "units": 4445
+  },
+  {
+   "segment": "new_tower",
+   "period": "2025-Q3",
+   "n": 21,
+   "med_days": 1302,
+   "units": 4385
+  },
+  {
+   "segment": "new_tower",
+   "period": "2025-Q4",
+   "n": 24,
+   "med_days": 1350,
+   "units": 4622
+  },
+  {
+   "segment": "new_tower",
+   "period": "2026-Q1",
+   "n": 25,
+   "med_days": 1415,
+   "units": 3970
+  },
+  {
+   "segment": "new_tower",
+   "period": "2026-Q2",
+   "n": 28,
+   "med_days": 1582,
+   "units": 5021
+  }
+ ],
  "clocks_delivery": {
   "overall_recent": {
-   "n": 2636,
-   "median_days": 740.0
+   "n": 2641,
+   "median_days": 739
   },
   "by_bucket_recent": {
    "1-3": {
-    "n": 1918,
-    "median_days": 651.5
+    "n": 1921,
+    "median_days": 652
    },
    "4-25": {
     "n": 341,
     "median_days": 918
    },
    "26-99": {
-    "n": 246,
-    "median_days": 1030.0
+    "n": 248,
+    "median_days": 1021.0
    },
    "100+": {
     "n": 131,
@@ -4691,25 +5267,25 @@
     "median_days": 856
    },
    "2026": {
-    "n": 495,
-    "median_days": 928
+    "n": 500,
+    "median_days": 920.0
    }
   },
-  "note": "Client-side join of 9227 NB initial filings to 2794 jobs with an issued Initial/Final CO (earliest per job); cohort = COs issued 2023+. Only completed buildings are measurable, so the cohort skews toward projects that finished \u2014 a survivorship limit of published data."
+  "note": "Client-side join of 9227 NB initial filings to 2799 jobs with an issued Initial/Final CO (earliest per job); cohort = COs issued 2023+. Only completed buildings are measurable, so the cohort skews toward projects that finished \u2014 a survivorship limit of published data."
  },
  "hero": {
   "dobnow_totals": [
    {
-    "filings_12mo": "62528",
+    "filings_12mo": "62770",
     "med_days_all": "5",
-    "standard_review_n": "29697"
+    "standard_review_n": "29819"
    }
   ],
   "standard_12mo": [
    {
-    "n": "29697",
+    "n": "29819",
     "med_days": "35",
-    "within_6wk": "16547"
+    "within_6wk": "16610"
    }
   ]
  },
@@ -4747,13 +5323,13 @@
   {
    "dataset": "w9ak-ipjd",
    "purpose": "segmented open queue by status",
-   "soql": "SELECT filing_status, case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, median(date_diff_d(\"2026-07-16\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status, segment ORDER BY n DESC LIMIT 250",
+   "soql": "SELECT filing_status, case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, median(date_diff_d(\"2026-07-17\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status, segment ORDER BY n DESC LIMIT 250",
    "rows": 102
   },
   {
    "dataset": "w9ak-ipjd",
    "purpose": "segmented queue aging buckets",
-   "soql": "SELECT case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-16\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 30 AND date_diff_d(\"2026-07-16\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 90 AND date_diff_d(\"2026-07-16\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY segment LIMIT 20",
+   "soql": "SELECT case(job_type = \"New Building\" AND (proposed_dwelling_units::number > 99 OR proposed_no_of_stories::number >= 10), \"new_tower\", job_type = \"New Building\" AND proposed_dwelling_units::number > 25, \"new_large_mf\", job_type = \"New Building\" AND proposed_dwelling_units::number > 3, \"new_small_mf\", job_type = \"New Building\", \"new_house\", job_type = \"Alteration\" AND building_type IN (\"1 Family\", \"2 Family\", \"3 Family\"), \"home_reno\", TRUE, \"other_work\") AS segment, COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-17\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 30 AND date_diff_d(\"2026-07-17\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 90 AND date_diff_d(\"2026-07-17\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY segment LIMIT 20",
    "rows": 6
   },
   {
@@ -4765,13 +5341,13 @@
   {
    "dataset": "w9ak-ipjd",
    "purpose": "DOB NOW open queue by status with median age",
-   "soql": "SELECT filing_status, COUNT(*) AS n, median(date_diff_d(\"2026-07-16\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status ORDER BY n DESC LIMIT 30",
+   "soql": "SELECT filing_status, COUNT(*) AS n, median(date_diff_d(\"2026-07-17\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status ORDER BY n DESC LIMIT 30",
    "rows": 30
   },
   {
    "dataset": "w9ak-ipjd",
    "purpose": "DOB NOW open queue aging buckets",
-   "soql": "SELECT COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-16\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 30 AND date_diff_d(\"2026-07-16\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 90 AND date_diff_d(\"2026-07-16\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\"",
+   "soql": "SELECT COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-17\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 30 AND date_diff_d(\"2026-07-17\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 90 AND date_diff_d(\"2026-07-17\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_filing_number LIKE \"%-I1\"",
    "rows": 1
   },
   {
@@ -4837,13 +5413,13 @@
   {
    "dataset": "w9ak-ipjd",
    "purpose": "new-housing open queue by status",
-   "soql": "SELECT filing_status, COUNT(*) AS n, median(date_diff_d(\"2026-07-16\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status ORDER BY n DESC LIMIT 30",
+   "soql": "SELECT filing_status, COUNT(*) AS n, median(date_diff_d(\"2026-07-17\", filing_date)) AS med_age_days WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" GROUP BY filing_status ORDER BY n DESC LIMIT 30",
    "rows": 17
   },
   {
    "dataset": "w9ak-ipjd",
    "purpose": "new-housing queue aging buckets",
-   "soql": "SELECT COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-16\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 30 AND date_diff_d(\"2026-07-16\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 90 AND date_diff_d(\"2026-07-16\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-16\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" ",
+   "soql": "SELECT COUNT(*) AS n, sum(case(date_diff_d(\"2026-07-17\", filing_date) <= 30, 1, TRUE, 0)) AS age_0_30, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 30 AND date_diff_d(\"2026-07-17\", filing_date) <= 90, 1, TRUE, 0)) AS age_31_90, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 90 AND date_diff_d(\"2026-07-17\", filing_date) <= 365, 1, TRUE, 0)) AS age_91_365, sum(case(date_diff_d(\"2026-07-17\", filing_date) > 365, 1, TRUE, 0)) AS age_over_1yr WHERE filing_status NOT IN (\"LOC Issued\", \"Approved\", \"Permit Entire\", \"CO Issued\", \"TA Certificate of Operation Issued\", \"PA Certificate of Operation Issued\", \"Filing Withdrawn\", \"Full Demolition Signed-off\", \"Permit Issued\", \"PAA Approved\", \"LL 158-2017-Denied\") AND job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" ",
    "rows": 1
   },
   {
@@ -4874,7 +5450,7 @@
    "dataset": "pkdm-hqz6",
    "purpose": "NB certificates of occupancy (Initial/Final), page 1",
    "soql": "SELECT job_filing_name, c_of_o_filing_type, c_of_o_issuance_date WHERE job_type = \"New Building\" AND c_of_o_status = \"CO Issued\" AND c_of_o_filing_type IN (\"Initial\", \"Final\") ORDER BY job_filing_name LIMIT 5000 OFFSET 0",
-   "rows": 3333
+   "rows": 3339
   },
   {
    "dataset": "pkdm-hqz6",
@@ -4885,13 +5461,13 @@
   {
    "dataset": "w9ak-ipjd",
    "purpose": "NB initial filings for CO join, page 1",
-   "soql": "SELECT job_filing_number, filing_date, proposed_dwelling_units WHERE job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" AND filing_date IS NOT NULL ORDER BY job_filing_number LIMIT 8000 OFFSET 0",
+   "soql": "SELECT job_filing_number, filing_date, proposed_dwelling_units, proposed_no_of_stories WHERE job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" AND filing_date IS NOT NULL ORDER BY job_filing_number LIMIT 8000 OFFSET 0",
    "rows": 8000
   },
   {
    "dataset": "w9ak-ipjd",
    "purpose": "NB initial filings for CO join, page 2",
-   "soql": "SELECT job_filing_number, filing_date, proposed_dwelling_units WHERE job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" AND filing_date IS NOT NULL ORDER BY job_filing_number LIMIT 8000 OFFSET 8000",
+   "soql": "SELECT job_filing_number, filing_date, proposed_dwelling_units, proposed_no_of_stories WHERE job_type = \"New Building\" AND job_filing_number LIKE \"%-I1\" AND filing_date IS NOT NULL ORDER BY job_filing_number LIMIT 8000 OFFSET 8000",
    "rows": 1227
   },
   {
@@ -5212,6 +5788,106 @@ function renderClock(seg) {
     }));
 }
 
+// ---------- CO clock chart: quarterly delivery, dual axis ----------
+const CO_SEGS = ['new_housing', 'new_house', 'new_small_mf', 'new_large_mf', 'new_tower'];
+const CO_LINE_FROM = '2023-Q1';
+function renderCoClock(seg) {
+  clear('co-clock-chart'); clear('co-clock-legend'); clear('co-clock-table');
+  const dataSeg = CO_SEGS.includes(seg) ? seg : (seg === 'all' ? 'new_housing' : null);
+  $('co-clock-scope').textContent = dataSeg ? SEGMENTS[dataSeg].scope : '';
+  $('co-clock-table').closest('details').style.display = dataSeg ? '' : 'none';
+  if (!dataSeg) {
+    $('co-clock-chart').innerHTML = '<p class="note">New buildings only — this project type does not receive a certificate of occupancy.</p>';
+    return;
+  }
+  const rows = DATA.delivery_quarterly.filter(r => r.segment === dataSeg);
+  const periods = rows.map(r => r.period);
+  const maxY = Math.max(10, ...rows.filter(r => r.period >= CO_LINE_FROM).map(r => +r.med_days)) * 1.12;
+  const maxV = Math.max(1, ...rows.map(r => +r.units)) * 1.05;
+  const W = 960, H = 300, M = { t: 14, r: 150, b: 34, l: 44 };
+  const VBAND = (H - M.t - M.b) * 0.3;
+  const x = i => periods.length === 1 ? (M.l + W - M.r) / 2 : M.l + i * (W - M.l - M.r) / (periods.length - 1);
+  const y = v => H - M.b - v * (H - M.t - M.b) / maxY;
+  const yv = v => H - M.b - v * VBAND / maxV;
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, width: '100%', role: 'img',
+    'aria-label': 'Quarterly median days from filing to first certificate of occupancy, with units delivered on a second axis' }, null);
+  $('co-clock-chart').appendChild(svg);
+
+  const niceSteps = [10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 2500, 5000];
+  const step = niceSteps.find(s => maxY / s <= 6) || 5000;
+  for (let v = 0; v <= maxY; v += step) {
+    el('line', { x1: M.l, x2: W - M.r, y1: y(v), y2: y(v), stroke: cssVar('--grid'), 'stroke-width': 1 }, svg);
+    const t = el('text', { x: M.l - 8, y: y(v) + 4, 'text-anchor': 'end', class: 'axis-t' }, svg);
+    t.textContent = fmt(v);
+  }
+  const vstep = niceSteps.find(s => maxV / s <= 2) || 5000;
+  for (let v = vstep; v <= maxV; v += vstep) {
+    const top = v + vstep > maxV;
+    const t = el('text', { x: W - M.r + 16, y: yv(v) + 4, class: 'axis-t' }, svg);
+    t.textContent = fmt(v) + (top ? ' units' : '');
+  }
+  periods.forEach((p, i) => {
+    if (p.endsWith('Q1')) {
+      const t = el('text', { x: x(i), y: H - M.b + 18, 'text-anchor': 'middle', class: 'axis-t' }, svg);
+      t.textContent = p.slice(0, 4);
+      el('line', { x1: x(i), x2: x(i), y1: H - M.b, y2: H - M.b + 4, stroke: cssVar('--axis') }, svg);
+    }
+  });
+  el('line', { x1: M.l, x2: W - M.r, y1: H - M.b, y2: H - M.b, stroke: cssVar('--axis'), 'stroke-width': 1 }, svg);
+
+  const bw = Math.min(24, (W - M.l - M.r) / Math.max(periods.length, 1) * 0.55);
+  const volBars = rows.map((r, i) => {
+    const bh = (H - M.b) - yv(+r.units);
+    return bh > 0 ? el('path', { d: roundedBarV(x(i) - bw / 2, yv(+r.units), bw, bh, 4),
+      fill: cssVar('--ord-1'), 'fill-opacity': 0.75 }, svg) : null;
+  });
+
+  const linePts = rows.map((r, i) => ({ i, r })).filter(o => o.r.period >= CO_LINE_FROM);
+  const d = linePts.map((o, k) => `${k ? 'L' : 'M'}${x(o.i)},${y(+o.r.med_days)}`).join('');
+  el('path', { d, fill: 'none', stroke: cssVar('--series-1'), 'stroke-width': 2,
+    'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, svg);
+  const last = linePts[linePts.length - 1];
+  el('circle', { cx: x(last.i), cy: y(+last.r.med_days), r: 4.5, fill: cssVar('--series-1'),
+    stroke: cssVar('--surface-1'), 'stroke-width': 2 }, svg);
+  const lt = el('text', { x: x(last.i) + 10, y: y(+last.r.med_days) + 4, class: 'val-t' }, svg);
+  lt.textContent = `${fmt(+last.r.med_days)}d`;
+
+  const hov = el('g', { style: 'display:none', 'pointer-events': 'none' }, svg);
+  const hovLine = el('line', { y1: M.t, y2: H - M.b, stroke: cssVar('--axis'),
+    'stroke-width': 1, 'stroke-dasharray': '3 3' }, hov);
+  const hovDot = el('circle', { r: 4.5, fill: cssVar('--series-1'),
+    stroke: cssVar('--surface-1'), 'stroke-width': 2 }, hov);
+  rows.forEach((r, i) => {
+    const hw = Math.max(12, (W - M.l - M.r) / Math.max(periods.length - 1, 1));
+    const hit = el('rect', { x: x(i) - hw / 2, y: M.t, width: hw, height: H - M.t - M.b, fill: 'transparent' }, svg);
+    hit.addEventListener('mousemove', evt => {
+      hov.style.display = '';
+      hovLine.setAttribute('x1', x(i)); hovLine.setAttribute('x2', x(i));
+      const onLine = r.period >= CO_LINE_FROM;
+      hovDot.style.display = onLine ? '' : 'none';
+      if (onLine) { hovDot.setAttribute('cx', x(i)); hovDot.setAttribute('cy', y(+r.med_days)); }
+      volBars.forEach((b, k) => b && b.setAttribute('fill-opacity', k === i ? 1 : 0.75));
+      const dot = c => `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:6px"></span>`;
+      tooltipShow(evt, `<div class="tt-h">${r.period}</div>` +
+        (onLine ? `<div class="tt-r">${dot(cssVar('--series-1'))}${fmt(+r.med_days)}d</div>` : '') +
+        `<div class="tt-r">${dot(cssVar('--ord-1'))}${fmt(+r.units)}</div>`);
+    });
+    hit.addEventListener('mouseleave', () => {
+      hov.style.display = 'none';
+      volBars.forEach(b => b && b.setAttribute('fill-opacity', 0.75));
+      tooltipHide();
+    });
+  });
+
+  legendChips('co-clock-legend', [
+    { label: 'Filing → first CO — days (left)', color: cssVar('--series-1') },
+    { label: 'Units delivered — volume (right, bars)', color: cssVar('--ord-1') },
+  ]);
+  makeTable('co-clock-table',
+    ['Quarter', 'Median days filing → first CO', 'Buildings', 'Units'],
+    rows.map(r => [r.period, r.period >= CO_LINE_FROM ? fmt(+r.med_days) : '—', fmt(+r.n), fmt(+r.units)]));
+}
+
 // ---------- horizontal bars ----------
 function hBars(containerId, rows, opts = {}) {
   const W = 960, rowH = 28, gap = 8, M = { t: 4, r: 130, b: 4, l: opts.labelW || 210 };
@@ -5458,6 +6134,7 @@ function renderSegment(seg) {
   renderHero(seg);
   renderThreeClocks(seg);
   renderClock(seg);
+  renderCoClock(seg);
   // borough + queue panels hidden for now — restore by removing the
   // hidden attributes on #boro-card / #queue-card and re-enabling these calls
   // renderBoro(seg);

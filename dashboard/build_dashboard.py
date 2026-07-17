@@ -319,7 +319,7 @@ def main():
     filings = []
     for off in (0, 8000, 16000):
         page = soql("w9ak-ipjd", (
-            'SELECT job_filing_number, filing_date, proposed_dwelling_units '
+            'SELECT job_filing_number, filing_date, proposed_dwelling_units, proposed_no_of_stories '
             'WHERE job_type = "New Building" AND job_filing_number LIKE "%-I1" '
             'AND filing_date IS NOT NULL '
             f'ORDER BY job_filing_number LIMIT 8000 OFFSET {off}'
@@ -359,10 +359,39 @@ def main():
             u = int(float(f.get("proposed_dwelling_units")))
         except (TypeError, ValueError):
             u = None
-        joined.append({"days": dd, "co_year": first_co[k].year, "bucket": bucket(u)})
+        try:
+            st = int(float(f.get("proposed_no_of_stories")))
+        except (TypeError, ValueError):
+            st = None
+        # mirror SEGMENT_CASE: tower = 100+ units OR 10+ stories
+        if (u or 0) > 99 or (st or 0) >= 10:
+            seg = "new_tower"
+        elif (u or 0) > 25:
+            seg = "new_large_mf"
+        elif (u or 0) > 3:
+            seg = "new_small_mf"
+        else:
+            seg = "new_house"
+        cod = first_co[k]
+        joined.append({"days": dd, "co_year": cod.year,
+                       "co_q": f"{cod.year}-Q{(cod.month - 1) // 3 + 1}",
+                       "units": u or 0, "seg": seg, "bucket": bucket(u)})
     def med_block(vals):
         return {"n": len(vals), "median_days": statistics.median(vals) if vals else None}
     recent = [j["days"] for j in joined if j["co_year"] >= 2023]
+    # Quarterly delivery series per segment (+ all-NB rollup), cohorted by CO quarter.
+    cur_q = f"{TODAY[:4]}-Q{(int(TODAY[5:7]) - 1) // 3 + 1}"
+    dq = []
+    for seg in ("new_housing", "new_house", "new_small_mf", "new_large_mf", "new_tower"):
+        rows = joined if seg == "new_housing" else [j for j in joined if j["seg"] == seg]
+        for q in sorted({j["co_q"] for j in rows}):
+            if q >= cur_q or q < "2021-Q1":
+                continue
+            vals = [j["days"] for j in rows if j["co_q"] == q]
+            dq.append({"segment": seg, "period": q, "n": len(vals),
+                       "med_days": round(statistics.median(vals)),
+                       "units": sum(j["units"] for j in rows if j["co_q"] == q)})
+    data["delivery_quarterly"] = dq
     data["clocks_delivery"] = {
         "overall_recent": med_block(recent),
         "by_bucket_recent": {b: med_block([j["days"] for j in joined
